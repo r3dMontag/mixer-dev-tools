@@ -8,6 +8,10 @@
 </head>
 <body>
   <form  action="/auth" method="post">
+    <% @display_scopes.each do |s| %>
+      <div><input type="checkbox" name="selected_scopes[]" value="<%= s['scope_option_value'] %>"><small> <%= s["description"] %></small></div>
+      <small>&nbsp;</small>
+    <% end %>
     <input type="submit" name="token" value="get_token">
   </form>
 </body>

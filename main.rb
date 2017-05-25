@@ -1,8 +1,16 @@
 require 'rubygems'
 require 'sinatra'
+require 'json'
+
+set :scope_options, JSON.parse(File.read('data/scopes.json'))
+
+before do
+  @display_scopes = settings.scope_options
+end
 
 get "/" do
   erb :index
+  # @display_scopes.to_s
 end
 
 post '/auth' do
