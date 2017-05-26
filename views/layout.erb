@@ -9,20 +9,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <script type="text/javascript" language="javascript">
-    $(document).ready(function() {
-        var hash = location.hash.substr(1);
-        var accessToken = hash.substr(hash.indexOf('access_token=')).split('&')[0].split('=')[1];
-
-        if (accessToken) {
-            $("#quickAuthTokenField").val(encodeURIComponent(accessToken));
-        }
-    });
-  </script>
+  <!-- Font Awesome  -->
+  <script src="https://use.fontawesome.com/ae11b6419b.js"></script>
+  <script src="js/parse_token.js"></script>
   <style>
-  body {
+    body {
       padding-top: 70px;
-  }
+    }
+    footer {
+      padding-top: 120px;
+    }
   </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,8 +63,10 @@
       </div>
     </div>
   </div>
+  <hr />
+  <div class="text-center">Want to revoke access? Log in at <a href='https://mixer.com/' target="_blank">Mixer</a> and Go to Account > Oauth Apps</div>
   <footer class="text-center">
-    <span>Want to revoke access? Log in at <a href='https://mixer.com/(hub:me/account/oauth)' target="blank">Mixer</a> and Go to Account > Oauth Apps</span>
+    <small>Made with <i class="fa fa-heart"></i> by <a href="http://github.com/r3dMontag" target="_blank">redMontag</a><br />Full source code on <br/><a href="http://github.com/r3dMontag/mixer-quick-auth"><i class="fa fa-2x fa-github"></i></a></small>
   </footer>
 </body>
 </html>
