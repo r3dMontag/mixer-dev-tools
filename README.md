@@ -1,4 +1,4 @@
-##Prerequisites
+## Prerequisites
 * This project runs on ruby 2.4.0. Use `ruby --version` to check which version you are running.
 	* Use rvm to install/use 2.4.0 : [Install RVM](https://rvm.io/rvm/install).
 	* run `rvm install 2.4.0` , `rvm use 2.4.0`  
