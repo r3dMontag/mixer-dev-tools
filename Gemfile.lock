@@ -1,7 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    json (2.1.0)
     mustermann (1.0.0)
     rack (2.0.3)
     rack-protection (2.0.0)
@@ -11,14 +10,16 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.0)
       tilt (~> 2.0)
+    sinatra-flash (0.3.0)
+      sinatra (>= 1.0.0)
     tilt (2.0.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  json
   sinatra
+  sinatra-flash
 
 BUNDLED WITH
    1.15.0

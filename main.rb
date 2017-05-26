@@ -1,12 +1,14 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/flash'
 require 'json'
+
+enable :sessions
 
 set :scope_options, JSON.parse(File.read('data/scopes.json'))
 
 get "/" do
   erb :index
-  # @display_scopes.to_s
 end
 
 get "/gettoken" do
@@ -15,6 +17,12 @@ get "/gettoken" do
 end
 
 post '/auth' do
+
+  unless params[:selected_scopes]
+    flash[:error] = "You need to select a thing and stuff"
+    redirect '/gettoken'
+  end
+
   requested_scopes = params[:selected_scopes].join('%20')
 
   url = "https://mixer.com/oauth/authorize"
@@ -30,7 +38,3 @@ end
 get '/callback' do
   erb :'callback', { :layout => :'layout'}
 end
-#1B1E2C
-#002773
-#73788A
-#D8D8DB

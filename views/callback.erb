@@ -1,8 +1,12 @@
 <div class="text-center">
-  <form>
-    <div>
-      <label> Grab your token here: </label>
-      <input style="width:100%;" type="text" id="quickAuthTokenField" readonly="readonly" class="text-center" onClick="this.select();">
+  <div id="quickAuthShowToken" style="display:none;">
+    <label> Grab your token here: </label>
+    <input style="width:100%;" type="text" id="quickAuthTokenField" readonly="readonly" class="text-center" onClick="this.select();">
+  </div>
+  <div id="mixerError" style="display:none;">
+    <div class="alert alert-danger" role="alert">
+      Oh snap!  Looks like something went wrong: <strong id="errorMsgField"></strong>
     </div>
-  </form>
+    <span><a href="/gettoken">Try Again</a></span><br />
+  </div>
 </div>

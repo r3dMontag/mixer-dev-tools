@@ -19,6 +19,9 @@
     footer {
       padding-top: 120px;
     }
+    .hidden {
+      display: none;
+    }
   </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,6 +60,11 @@
   <div class="container center-block">
     <div class="row">
       <div class="col-md-12">
+        <% if flash[:error] %>
+        <div class="alert alert-danger" role="alert">
+          <strong>Oh snap!</strong> <%= flash[:error] %>.
+        </div>
+        <% end %>
 
         <%= yield %>
 
