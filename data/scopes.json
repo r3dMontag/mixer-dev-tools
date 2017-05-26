@@ -1,337 +1,226 @@
 [
   {
-  "index": "1",
-  "scope_option_value": "achievement:view:self",
-  "description": "View your earned achievements."
+    "scope": "achievement:view:self",
+    "description": "View your earned achievements."
   },
-
   {
-    "index": 2,
-    "scope_option_value": "channel:analytics",
+    "scope": "channel:analytics",
     "description": "View analytics for a channel."
   },
-
   {
-    "index": 3,
-    "scope_option_value": "channel:analytics:self",
+    "scope": "channel:analytics:self",
     "description": "View your channel analytics."
   },
-
   {
-    "index": 4,
-    "scope_option_value": "channel:costream:self",
+    "scope": "channel:costream:self",
     "description": "Manage your costreaming requests."
   },
-
   {
-    "index": 5,
-    "scope_option_value": "channel:deleteBanner",
+    "scope": "channel:deleteBanner",
     "description": "Delete a channel's banner"
   },
-
   {
-    "index": 6,
-    "scope_option_value": "channel:deleteBanner:self",
+    "scope": "channel:deleteBanner:self",
     "description": "Delete your channel banner"
   },
-
   {
-    "index": 7,
-    "scope_option_value": "channel:details:self",
+    "scope": "channel:details:self",
     "description": "View your channel details."
   },
-
   {
-    "index": 8,
-    "scope_option_value": "channel:follow:self",
+    "scope": "channel:follow:self",
     "description": "Follow and unfollow other channels."
   },
-
   {
-    "index": 9,
-    "scope_option_value": "channel:partnership",
+    "scope": "channel:partnership",
     "description": "Create and view partnership applications."
   },
-
   {
-    "index": 10,
-    "scope_option_value": "channel:partnership:self",
+    "scope": "channel:partnership:self",
     "description": "Manage your partnership status."
   },
-
   {
-    "index": 11,
-    "scope_option_value": "channel:streamKey:self",
+    "scope": "channel:streamKey:self",
     "description": "View your channel's stream key."
   },
-
   {
-    "index": 12,
-    "scope_option_value": "channel:update:self",
+    "scope": "channel:update:self",
     "description": "Update your channel settings"
   },
-
   {
-    "index": 13,
-    "scope_option_value": "chat:bypass_links",
+    "scope": "chat:bypass_links",
     "description": "Bypass links being disallowed in chat."
   },
-
   {
-    "index": 14,
-    "scope_option_value": "chat:bypass_slowchat",
+    "scope": "chat:bypass_slowchat",
     "description": "Bypass slowchat settings on channels."
   },
-
   {
-    "index": 15,
-    "scope_option_value": "chat:change_ban",
+    "scope": "chat:change_ban",
     "description": "Manage bans in chats."
   },
-
   {
-    "index": 16,
-    "scope_option_value": "chat:change_role",
+    "scope": "chat:change_role",
     "description": "Manage roles in chats."
   },
-
   {
-    "index": 17,
-    "scope_option_value": "chat:chat",
+    "scope": "chat:chat",
     "description": "Interact with chats on your behalf."
   },
-
   {
-    "index": 18,
-    "scope_option_value": "chat:clear_messages",
+    "scope": "chat:clear_messages",
     "description": "Clear messages in chats where authorized."
   },
-
   {
-    "index": 19,
-    "scope_option_value": "chat:connect",
+    "scope": "chat:connect",
     "description": "Connect to chat."
   },
-
   {
-    "index": 20,
-    "scope_option_value": "chat:edit_options",
+    "scope": "chat:edit_options",
     "description": "Edit chat options, including links settings and slowchat."
   },
-
   {
-    "index": 21,
-    "scope_option_value": "chat:giveaway_start",
+    "scope": "chat:giveaway_start",
     "description": "Start a giveaway in chats where authorized."
   },
-
   {
-    "index": 22,
-    "scope_option_value": "chat:poll_start",
+    "scope": "chat:poll_start",
     "description": "Start a poll in chats where authorized."
   },
-
   {
-    "index": 23,
-    "scope_option_value": "chat:poll_vote",
+    "scope": "chat:poll_vote",
     "description": "Vote in chat polls."
   },
-
   {
-    "index": 24,
-    "scope_option_value": "chat:purge",
+    "scope": "chat:purge",
     "description": "Clear all messages from a specific user in chat."
   },
-
   {
-    "index": 25,
-    "scope_option_value": "chat:remove_message",
+    "scope": "chat:remove_message",
     "description": "Remove own and other's messages in chat."
   },
-
   {
-    "index": 26,
-    "scope_option_value": "chat:timeout",
+    "scope": "chat:timeout",
     "description": "Change timeout settings in chats."
   },
-
   {
-    "index": 27,
-    "scope_option_value": "chat:view_deleted",
+    "scope": "chat:view_deleted",
     "description": "View deleted messages in chat."
   },
-
   {
-    "index": 28,
-    "scope_option_value": "chat:whisper",
+    "scope": "chat:whisper",
     "description": "Gives the ability to whisper in a channel"
   },
-
   {
-    "index": 29,
-    "scope_option_value": "interactive:manage:self",
+    "scope": "interactive:manage:self",
     "description": "Create, update and delete the interactive games in your account."
   },
-
   {
-    "index": 30,
-    "scope_option_value": "interactive:robot:self",
+    "scope": "interactive:robot:self",
     "description": "Run as an interactive game in your channel."
   },
-
   {
-    "index": 31,
-    "scope_option_value": "invoice:view:self",
+    "scope": "invoice:view:self",
     "description": "View the users invoices."
   },
-
   {
-    "index": 32,
-    "scope_option_value": "log:view:self",
+    "scope": "log:view:self",
     "description": "View and manage your security log."
   },
-
   {
-    "index": 33,
-    "scope_option_value": "notification:update:self",
+    "scope": "notification:update:self",
     "description": "Create and manage your notifications."
   },
-
   {
-    "index": 34,
-    "scope_option_value": "notification:view:self",
+    "scope": "notification:view:self",
     "description": "View your notifications."
   },
-
   {
-    "index": 35,
-    "scope_option_value": "recording:manage:self",
+    "scope": "recording:manage:self",
     "description": "Manage the users VODs."
   },
-
   {
-    "index": 36,
-    "scope_option_value": "redeemable:create:self",
+    "scope": "redeemable:create:self",
     "description": "Create redeemables after performing a purchase."
   },
-
   {
-    "index": 37,
-    "scope_option_value": "redeemable:redeem:self",
+    "scope": "redeemable:redeem:self",
     "description": "Use users redeemable."
   },
-
   {
-    "index": 38,
-    "scope_option_value": "redeemable:view:self",
+    "scope": "redeemable:view:self",
     "description": "View users redeemables."
   },
-
   {
-    "index": 39,
-    "scope_option_value": "resource:find:self",
+    "scope": "resource:find:self",
     "description": "View emoticons and other graphical resources you have access to."
   },
-
   {
-    "index": 40,
-    "scope_option_value": "subscription:cancel:self",
+    "scope": "subscription:cancel:self",
     "description": "Cancel your subscriptions."
   },
-
   {
-    "index": 41,
-    "scope_option_value": "subscription:create:self",
+    "scope": "subscription:create:self",
     "description": "Create new subscriptions."
   },
-
   {
-    "index": 42,
-    "scope_option_value": "subscription:renew:self",
+    "scope": "subscription:renew:self",
     "description": "Renew your existing subscriptions."
   },
-
   {
-    "index": 43,
-    "scope_option_value": "subscription:view:self",
+    "scope": "subscription:view:self",
     "description": "View who you're subscribed to."
   },
-
   {
-    "index": 44,
-    "scope_option_value": "team:administer",
+    "scope": "team:administer",
     "description": "Administrate teams the user has rights in."
   },
-
   {
-    "index": 45,
-    "scope_option_value": "team:manage:self",
+    "scope": "team:manage:self",
     "description": "Create, join, leave teams and set the users primary team."
   },
-
   {
-    "index": 46,
-    "scope_option_value": "transaction:cancel:self",
+    "scope": "transaction:cancel:self",
     "description": "Cancel pending transactions."
   },
-
   {
-    "index": 47,
-    "scope_option_value": "transaction:view:self",
+    "scope": "transaction:view:self",
     "description": "View your pending transactions."
   },
-
   {
-    "index": 48,
-    "scope_option_value": "type:viewHidden",
+    "scope": "type:viewHidden",
     "description": "Gives the ability to view hidden types in ES"
   },
-
   {
-    "index": 49,
-    "scope_option_value": "user:analytics:self",
+    "scope": "user:analytics:self",
     "description": "View your user analytics"
   },
-
   {
-    "index": 50,
-    "scope_option_value": "user:details:self",
+    "scope": "user:details:self",
     "description": "View your email address and other private details."
   },
-
   {
-    "index": 51,
-    "scope_option_value": "user:getDiscordInvite:self",
+    "scope": "user:getDiscordInvite:self",
     "description": "View users discord invites."
   },
-
   {
-    "index": 52,
-    "scope_option_value": "user:log:self",
+    "scope": "user:log:self",
     "description": "View your user security log."
   },
-
   {
-    "index": 53,
-    "scope_option_value": "user:notification:self",
+    "scope": "user:notification:self",
     "description": "View and manage your notifications."
   },
-
   {
-    "index": 54,
-    "scope_option_value": "user:seen:self",
+    "scope": "user:seen:self",
     "description": "Mark a VOD as seen for the user."
   },
-
   {
-    "index": 55,
-    "scope_option_value": "user:update:self",
+    "scope": "user:update:self",
     "description": "Update your account, including your email but not your password."
   },
-
   {
-    "index": 56,
-    "scope_option_value": "user:updatePassword:self",
+    "scope": "user:updatePassword:self",
     "description": "Update your password."
   }
 ]

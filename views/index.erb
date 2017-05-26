@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>BEAM quick OAUTH</title>
-</head>
-<body>
-  <form  action="/auth" method="post">
-    <% @display_scopes.each do |s| %>
-      <div><input type="checkbox" name="selected_scopes[]" value="<%= s['scope_option_value'] %>"><small> <%= s["description"] %></small></div>
-      <small>&nbsp;</small>
-    <% end %>
-    <input type="submit" name="token" value="get_token">
-  </form>
-</body>
-</html>
+<form  action="/auth" method="post">
+  <% scope_groups = @display_scopes.each_slice((@display_scopes.size/4.0).ceil).to_a %>
+  <% scope_groups.each do |g| %>
+    <div class="col-md-3">
+      <% g.each do |s| %>
+        <div title="<%= s['description'] %>" class="checkbox">
+          <label>
+            <input type="checkbox" name="selected_scopes[]" value="<%= s['scope'] %>"><%= s['scope'] %>
+          </label>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+  <div class="form-group">
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary btn-lg">Get token</button>
+    </div>
+  </div>
+</form>

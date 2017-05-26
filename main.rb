@@ -4,25 +4,25 @@ require 'json'
 
 set :scope_options, JSON.parse(File.read('data/scopes.json'))
 
-before do
-  @display_scopes = settings.scope_options
-end
-
 get "/" do
+  @display_scopes = settings.scope_options
   erb :index
   # @display_scopes.to_s
 end
 
 post '/auth' do
-  url = "https://beam.pro/oauth/authorize"
+  requested_scopes = params[:selected_scopes].join('%20')
+  
+  url = "https://mixer.com/oauth/authorize"
   url += "?response_type=token"
   url += "&redirect_uri=#{request.base_url}/callback"
-  url += "&scope=chat:connect%20chat:chat"
+  url += "&scope=#{requested_scopes}"
   url += "&client_id=#{ENV['CLIENT_ID']}"
 
   redirect url
+
 end
 
 get '/callback' do
-  erb "thank you"
+  erb :'callback', { :layout => :'layout'}
 end
