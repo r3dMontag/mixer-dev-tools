@@ -3,7 +3,7 @@
   <% scope_groups.each do |g| %>
     <div class="col-md-3">
       <% g.each do |s| %>
-        <div title="<%= s['description'] %>" class="checkbox">
+        <div title="<%= s['description'] %>" class="checkbox form-group">
           <label>
             <input type="checkbox" name="selected_scopes[]" value="<%= s['scope'] %>"><%= s['scope'] %>
           </label>
@@ -11,6 +11,7 @@
       <% end %>
     </div>
   <% end %>
+  <p>&nbsp;</p>
   <div class="form-group">
     <div class="text-center">
       <button type="submit" class="btn btn-primary btn-lg">Get token</button>

@@ -4,20 +4,12 @@
     "description": "View your earned achievements."
   },
   {
-    "scope": "channel:analytics",
-    "description": "View analytics for a channel."
-  },
-  {
     "scope": "channel:analytics:self",
     "description": "View your channel analytics."
   },
   {
     "scope": "channel:costream:self",
     "description": "Manage your costreaming requests."
-  },
-  {
-    "scope": "channel:deleteBanner",
-    "description": "Delete a channel's banner"
   },
   {
     "scope": "channel:deleteBanner:self",
@@ -30,10 +22,6 @@
   {
     "scope": "channel:follow:self",
     "description": "Follow and unfollow other channels."
-  },
-  {
-    "scope": "channel:partnership",
-    "description": "Create and view partnership applications."
   },
   {
     "scope": "channel:partnership:self",
@@ -172,10 +160,6 @@
     "description": "View who you're subscribed to."
   },
   {
-    "scope": "team:administer",
-    "description": "Administrate teams the user has rights in."
-  },
-  {
     "scope": "team:manage:self",
     "description": "Create, join, leave teams and set the users primary team."
   },
@@ -186,10 +170,6 @@
   {
     "scope": "transaction:view:self",
     "description": "View your pending transactions."
-  },
-  {
-    "scope": "type:viewHidden",
-    "description": "Gives the ability to view hidden types in ES"
   },
   {
     "scope": "user:analytics:self",

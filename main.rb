@@ -12,7 +12,7 @@ end
 
 post '/auth' do
   requested_scopes = params[:selected_scopes].join('%20')
-  
+
   url = "https://mixer.com/oauth/authorize"
   url += "?response_type=token"
   url += "&redirect_uri=#{request.base_url}/callback"
@@ -26,3 +26,7 @@ end
 get '/callback' do
   erb :'callback', { :layout => :'layout'}
 end
+#1B1E2C
+#002773
+#73788A
+#D8D8DB
