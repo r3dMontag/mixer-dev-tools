@@ -188,10 +188,6 @@
     "description": "View your user security log."
   },
   {
-    "scope": "user:notification:self",
-    "description": "View and manage your notifications."
-  },
-  {
     "scope": "user:seen:self",
     "description": "Mark a VOD as seen for the user."
   },
