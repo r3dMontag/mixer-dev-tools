@@ -6,7 +6,7 @@ $(document).ready(function() {
     if (accessToken) {
       $("#quickAuthShowToken").show();
       $("#mixerError").hide();
-      $("#quickAuthTokenField").val('oauth:' + encodeURIComponent(accessToken));
+      $("#quickAuthTokenField").val(encodeURIComponent(accessToken));
     } else if(errorMsg) {
       $("#errorMsgField").text(unescape(errorMsg));
       $("#quickAuthShowToken").hide();
