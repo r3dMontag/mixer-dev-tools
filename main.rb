@@ -5,9 +5,13 @@ require 'json'
 set :scope_options, JSON.parse(File.read('data/scopes.json'))
 
 get "/" do
-  @display_scopes = settings.scope_options
   erb :index
   # @display_scopes.to_s
+end
+
+get "/gettoken" do
+  @display_scopes = settings.scope_options
+  erb :'token'
 end
 
 post '/auth' do
