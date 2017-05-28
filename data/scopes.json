@@ -116,14 +116,6 @@
     "description": "View and manage your security log."
   },
   {
-    "scope": "notification:update:self",
-    "description": "Create and manage your notifications."
-  },
-  {
-    "scope": "notification:view:self",
-    "description": "View your notifications."
-  },
-  {
     "scope": "recording:manage:self",
     "description": "Manage the users VODs."
   },
