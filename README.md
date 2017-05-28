@@ -1,18 +1,16 @@
 ## Prerequisites
 * This project runs on ruby 2.4.0. Use `ruby --version` to check which version you are running.
 	* Use rvm to install/use 2.4.0 : [Install RVM](https://rvm.io/rvm/install).
-	* run `rvm install 2.4.0` , `rvm use 2.4.0`  
-* Install bundler and foreman: `gem install bundler foreman`
+	* run `rvm install 2.4.0` , `rvm use 2.4.0` .
+* Install bundler and foreman: `gem install bundler foreman`.
 
 ## Getting Started
 1. Clone or download the repo.
 1. run `bundle install`
-1. If using foreman:
-	* Create .env [.env.template](.env.template) with specified ENVIRONMENT variables
-	* foreman's default port is 5000, you can change it in the .env file
-1. To run the app:
-	* If using foreman: `foreman start`
-	* Otherwise: `CLIENT_ID=(yourclientidfromyouroauthappinmixerlabs) PORT=(defaultportis4567) ruby main.rb`
+1. Create .env: `cp env.template .env` with specified ENVIRONMENT variables.
+1. Edit .env and replace 'your_client_id' with your OAuth Client ID from [Mixer](https://mixer.com/lab).
+1. To run the app: `foreman start`.
+1. Open [localhost:5000](http://localhost:5000).
 
 ## Notes
 * [scopes.json](data/scopes.json) contains the latest set of scopes from [Mixer's OAuth Documentation](https://dev.mixer.com/reference/oauth/) that have been tested and are known to be valid permission scopes.

@@ -13,13 +13,13 @@ end
 
 get "/gettoken" do
   @display_scopes = settings.scope_options
-  erb :'token'
+  erb :token
 end
 
 post '/auth' do
 
   unless params[:selected_scopes]
-    flash[:error] = "You need to select a thing and stuff"
+    flash[:error] = "You need to select a scope"
     redirect '/gettoken'
   end
 
@@ -36,5 +36,5 @@ post '/auth' do
 end
 
 get '/callback' do
-  erb :'callback', { :layout => :'layout'}
+  erb :callback
 end
