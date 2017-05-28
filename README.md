@@ -15,6 +15,6 @@
 	* Otherwise: `CLIENT_ID=(yourclientidfromyouroauthappinmixerlabs) PORT=(defaultportis4567) ruby main.rb`
 
 ## Notes
-* [data.json](/data/data.json) contains the latest set of scopes from [Mixer's OAuth Documentation](https://dev.mixer.com/reference/oauth/) that have been tested and are known to be valid permission scopes.
+* [data.json](data/scopes.json) contains the latest set of scopes from [Mixer's OAuth Documentation](https://dev.mixer.com/reference/oauth/) that have been tested and are known to be valid permission scopes.
 * The OAuth token generation uses the [implicit grant](https://tools.ietf.org/html/rfc6749#section-1.3.2) flow and is only ever sent to the client, not the server. These tokens expire after one year. See [Mixer's OAuth Documentation](https://dev.mixer.com/reference/oauth/) for more details.
 * Neither this tool or myself are associated with [Mixer](http://mixer.com) (formerly Beam).
